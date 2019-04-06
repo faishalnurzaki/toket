@@ -16,7 +16,7 @@ console.log("");
 console.log("");
 
 const Reff = readline.question("Masukan Kode Referal : ");
-const LooP = readline.question("Mau Berapa Banyak ? ");
+const LooP = readline.question("Njaluk piro Mheddd? ");
 const DelaY = readline.question(
   "Mau Berapa Lama (millisecond), semakin lama semakin besar peluang langsung verifikasi : "
 );
@@ -28,7 +28,7 @@ console.log("");
 const functionRegister = (email, domain) =>
   new Promise((resolve, reject) => {
     const body = {
-      password: "Coegsekali1!",
+      password: "Somed1!",
       monetize: true,
       email: `${email}@${domain}`,
       referral_id: Reff
@@ -274,7 +274,7 @@ const domain = [];
             " " +
             "]" +
             " " +
-            "Mengambil Token..."
+            "Mengambil Tokete Shomeddd"
         );
 
         await delay(DelaY);
