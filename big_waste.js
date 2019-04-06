@@ -9,7 +9,7 @@ const moment = require("moment");
 const rp = require("request-promise");
 
 console.log("#####################");
-console.log("Panggil w Amin Tamvan");
+console.log("Panggil w Amin Tamvan Ganteng");
 console.log("#####################");
 
 console.log("");
@@ -216,7 +216,7 @@ const domain = ["uselessmail.online"];
     for (let index = 0; index < LooP; index++) {
       const item = await domain[(Math.random() * domain.length) | 0];
       const emel = await genEmail(10);
-      await delay(1000);
+      await delay(200);
       const register = await functionRegister(emel, item);
       const email = emel + "@" + item;
       await console.log(
@@ -250,7 +250,7 @@ const domain = ["uselessmail.online"];
             " " +
             "Mengambil Token..."
         );
-        await delay(1200);
+        await delay(200);
         const message = await functionGetMessages(emel, item);
 
         if (message === undefined) {
