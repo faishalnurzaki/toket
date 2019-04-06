@@ -18,7 +18,9 @@ console.log("");
 const Reff = readline.question("Masukan Kode Referal : ");
 const LooP = readline.question("Mau Berapa Banyak ? ");
 
-console.log("");
+console.log("");const DelaY = readline.question(
+  "Mau Berapa Lama (millisecond), semakin lama semakin besar peluang langsung verifikasi : "
+);
 console.log("");
 
 const functionRegister = (email, domain) =>
@@ -216,7 +218,7 @@ const domain = ["uselessmail.online"];
     for (let index = 0; index < LooP; index++) {
       const item = await domain[(Math.random() * domain.length) | 0];
       const emel = await genEmail(10);
-      await delay(200);
+      await delay(DelaY);
       const register = await functionRegister(emel, item);
       const email = emel + "@" + item;
       await console.log(
@@ -250,7 +252,7 @@ const domain = ["uselessmail.online"];
             " " +
             "Mengambil Token..."
         );
-        await delay(200);
+        await delay(DelaY);
         const message = await functionGetMessages(emel, item);
 
         if (message === undefined) {
